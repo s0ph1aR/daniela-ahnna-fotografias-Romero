@@ -452,6 +452,33 @@ div#separador {
   font-size: larger;
 }
 
+.separadorAcercaDe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.separadorAcercaDe__caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.918);
+  width: 500px;
+  height: 70px;
+  border-radius: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.separadorAcercaDe__img {
+  height: 60px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -54,6 +54,27 @@
         
         font-family: 'Indie Flower', cursive;
         font-size: larger;
+
+
+    }
+}
+
+.separadorAcercaDe{
+    display: flex;
+    margin-bottom: 20px;
+
+    &__caja{
+        display: flex;
+    background-color: rgba(0, 0, 0, 0.918);
+    width: 500px;
+    height: 70px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &__img{
+        height: 60px;
     }
 }
 
