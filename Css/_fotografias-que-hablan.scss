@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ 
+.header{
+    &__degrade{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    }
+
+    &__logo{
+        font-family: 'Indie Flower', cursive;
+        color: black;
+        
+        padding: 0 0 0 10px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    &__logo:hover{
+        color: gray;
+        transition: all .3s;
+        transform: scale(1.05);
+    }
+}
+
+.article{
+    display: flex;
+    
+    padding: 30px;
+    border: 1px solid white;
+    margin: 20px;
+
+    &__parrafo{
+        color: rgb(3, 3, 3);
+        padding: 20px;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+   
+    &__parrafo{
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.3rem;
+    }
+}

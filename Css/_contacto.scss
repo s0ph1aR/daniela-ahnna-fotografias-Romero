@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.header{
+    &__degrade{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    }
+
+    &__logo{
+        font-family: 'Indie Flower', cursive;
+        color: black;
+        
+        padding: 0 0 0 10px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    &__logo:hover{
+        color: gray;
+        transition: all .3s;
+        transform: scale(1.05);
+    }
+}
+
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+
+    &__img{
+        width: 100%;
+        padding: 30px 30px;
+    }
+    &__form{
+        padding: 30px;
+        border-top: 1px solid black;
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+   
+    &__parrafo{
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.3rem;
+    }
+}
