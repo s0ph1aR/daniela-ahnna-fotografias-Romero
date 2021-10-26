@@ -163,14 +163,26 @@ aside {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header1 header1"
- "separador separador"
- "izquierda derecha"
- "footerGrilla footerGrilla";
+      grid-template-areas: "header1 header1" "separador separador" "izquierda derecha" "footerGrilla footerGrilla";
   -ms-grid-rows: 80px 150px auto 40px;
       grid-template-rows: 80px 150px auto 40px;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+}
+
+@media screen and (max-width: 850px) {
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+    width: auto;
+    margin: 0 auto;
+        grid-template-areas: "header1 " "separador " "izquierda " "derecha" "footerGrilla";
+    -ms-grid-rows: 80px 150px auto auto 40px;
+        grid-template-rows: 80px 150px auto auto 40px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }
 
 #header1 {
@@ -218,6 +230,12 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 850px) {
+  #izquierda {
+    border-right: none;
+  }
 }
 
 #derecha {
@@ -282,6 +300,12 @@ aside {
           align-items: center;
 }
 
+@media screen and (max-width: 400px) {
+  .separador {
+    width: 100%;
+  }
+}
+
 .separador__img {
   height: 60px;
 }
@@ -324,6 +348,12 @@ aside {
 #derecha > img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@media screen and (max-width: 550px) {
+  #derecha > img:hover #derecha > img:hover {
+    scale: 1;
+  }
 }
 
 .footer {
