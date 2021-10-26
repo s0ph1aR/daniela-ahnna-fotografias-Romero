@@ -350,12 +350,6 @@ aside {
           transform: scale(1.5);
 }
 
-@media screen and (max-width: 550px) {
-  #derecha > img:hover #derecha > img:hover {
-    scale: 1;
-  }
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
