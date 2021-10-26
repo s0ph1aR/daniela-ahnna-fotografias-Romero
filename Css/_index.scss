@@ -28,11 +28,18 @@
 .mainIndex{
     &__img{
         width: 100%;
-        padding: 30px;
+        padding-top: 30px;
+        
+
     }
     &__parrafo{
         text-align: center;
         padding: 150px 230px 150px 230px;
+
+        @media screen and(max-width : 765px) {
+            text-align: center;
+            padding: 150px 10px 150px 10px;
+        }
     }
 }
 
