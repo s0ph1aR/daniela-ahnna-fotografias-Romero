@@ -26,7 +26,7 @@
 
 .mainIndex__img {
   width: 100%;
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 .mainIndex__parrafo {
@@ -163,33 +163,33 @@ aside {
       grid-template-columns: auto;
 }
 
-header#header1 {
+#header1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: header1;
 }
 
-section#izquierda {
+#izquierda {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: izquierda;
 }
 
-section#derecha {
+#derecha {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: derecha;
 }
 
-footer#footerGrilla {
+#footerGrilla {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footerGrilla;
 }
 
-div#separador {
+#separador {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;

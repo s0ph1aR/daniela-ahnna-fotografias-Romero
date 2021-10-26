@@ -20,23 +20,23 @@
     grid-template-rows: 80px 150px auto 40px;
     grid-template-columns: auto;
 }
-header#header1{
+#header1{
     grid-area: header1;
 }
 
-section#izquierda{
+#izquierda{
     grid-area: izquierda;
 }
 
-section#derecha{
+#derecha{
     grid-area: derecha;
 }
 
-footer#footerGrilla{
+#footerGrilla{
     grid-area: footerGrilla;
 }
 
-div#separador{
+#separador{
     grid-area: separador;
 }
 #izquierda{
