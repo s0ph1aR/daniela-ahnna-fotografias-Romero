@@ -10,53 +10,55 @@
     grid-template-rows: 1fr auto 40px;
 }
 
-#grilla{
+#grilla {
     display: grid;
-    grid-template-areas: 
-    "header1 header1"
-    "separador separador"
-    "izquierda derecha"
-    "footerGrilla footerGrilla";
-    grid-template-rows: 80px 150px auto 40px;
+    grid-template-areas:
+        "header1 header1"
+        "separador separador"
+        "izquierda derecha"
+        "footerGrilla footerGrilla";
+    grid-template-rows: 72px 150px auto 40px;
     grid-template-columns: auto;
 
     @media screen and (max-width : 850px) {
 
-    display: grid;
-    width: auto;
-    margin: 0 auto;
-    grid-template-areas: 
-    "header1 "
-    "separador "
-    "izquierda "
-    "derecha"
-    "footerGrilla";
-    grid-template-rows: 80px 150px auto auto 40px;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-        
+        display: grid;
+        width: auto;
+        margin: 0 auto;
+        grid-template-areas:
+            "header1 "
+            "separador "
+            "izquierda "
+            "derecha"
+            "footerGrilla";
+        grid-template-rows: 72px 150px auto auto 40px;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+
     }
 }
-#header1{
+
+#header1 {
     grid-area: header1;
 }
 
-#izquierda{
+#izquierda {
     grid-area: izquierda;
 }
 
-#derecha{
+#derecha {
     grid-area: derecha;
 }
 
-#footerGrilla{
+#footerGrilla {
     grid-area: footerGrilla;
 }
 
-#separador{
+#separador {
     grid-area: separador;
 }
-#izquierda{
+
+#izquierda {
     border-right: 1px solid black;
     display: flex;
     align-items: center;
@@ -66,42 +68,52 @@
         border-right: none;
     }
 }
-#derecha{
+
+#derecha {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-#separador{
+#separador {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 
 }
 
-.header{
-    &__degrade{
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    }
+.header {
 
-    &__logo{
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 25px 20px -20px;
+ 
+
+    &__logo {
         font-family: 'Indie Flower', cursive;
         color: black;
-        
+
         padding: 0 0 0 10px;
         font-weight: bold;
         font-size: 32px;
+
+            
+        @media screen and(max-width : 400px) {
+
+            font-size: 100%;
+
+            
+        }
     }
-    &__logo:hover{
+
+    &__logo:hover {
         color: gray;
         transition: all .3s;
         transform: scale(1.05);
     }
 }
 
-.separador{
+.separador {
     display: flex;
     background-color: rgba(0, 0, 0, 0.918);
     width: 500px;
@@ -114,63 +126,105 @@
         width: 100%;
     }
 
-    &__img{
+    &__img {
         height: 60px;
     }
 }
 
-.izquierda{
-    &__inicio{
+.izquierda {
+    &__inicio {
         padding-top: 100px;
-        width: 400px;
+        
+
+        
     }
 
-    &__img{
+    &__img {
+
+        
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+        margin-bottom:  200px;
         width: 400px;
-        border-radius: 6px;
-        padding-bottom: 200px ;
-    
+
+            @media screen and(max-width : 400px) {
+
+                width: 300px;
+                
+            }
+
+            
+
+           
+
+
     }
 
-    &__parrafo{
+    &__parrafo {
         width: 400px;
-        padding-top: 150px;
+        
         padding-bottom: 150px;
         text-align: center;
+
+        @media screen and(max-width : 400px) {
+
+            width: 250px;
+            
+        }
     }
 }
 
-#izquierda>img:hover{
-    transform: scale(1.5);
-}
-
-.derecha{
-    &__img{
-        width: 400px;
-        border-radius: 6px;
-        padding-bottom: 200px ;
+@media screen and(min-width : 768px) {
+    #izquierda>img:hover {
+        transform: scale(1.5);
     }
 
-    &__parrafo{
+}
+
+
+.derecha {
+    &__img {
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
         width: 400px;
-    
+        margin-bottom: 200px;
+
+        @media screen and(max-width : 400px) {
+
+            width: 300px;
+            
+        }
+    }
+
+    &__parrafo {
+        width: 400px;
+
         padding-bottom: 150px;
         text-align: center;
-    
+
+        @media screen and(max-width : 400px) {
+
+            width: 250px;
+            
+        }
+
     }
 }
 
-#derecha>img:hover{
-    transform: scale(1.5);
+@media screen and(min-width : 768px) {
+    #derecha>img:hover {
+        transform: scale(1.5);
+    
+    }   
 
-    }
-.footer{
+}
+
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-   
-    &__parrafo{
+
+    &__parrafo {
         font-family: 'Indie Flower', cursive;
         font-size: 1.3rem;
     }

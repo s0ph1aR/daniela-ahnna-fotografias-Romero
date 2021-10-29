@@ -6,9 +6,7 @@
 
  
 .header{
-    &__degrade{
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    }
+    
 
     &__logo{
         font-family: 'Indie Flower', cursive;
@@ -17,6 +15,14 @@
         padding: 0 0 0 10px;
         font-weight: bold;
         font-size: 32px;
+
+            
+        @media screen and(max-width : 400px) {
+
+            font-size: 100%;
+
+            
+        }
     }
     &__logo:hover{
         color: gray;
