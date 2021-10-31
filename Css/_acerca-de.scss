@@ -5,115 +5,66 @@
 }
 
 
-.header{
-    
 
-    &__logo{
-        font-family: 'Indie Flower', cursive;
-        color: black;
-        
-        padding: 0 0 0 10px;
-        font-weight: bold;
-        font-size: 32px;
 
-            
-        @media screen and(max-width : 400px) {
 
-            font-size: 100%;
 
-            
-        }
-    }
-    &__logo:hover{
-        color: gray;
-        transition: all .3s;
-        transform: scale(1.05);
-    }
-}
 
-.mainAcercaDe{
+.mainAcercaDe {
+    background-image: url(../multimedia/collage1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
-    
-   
     justify-content: space-around;
     align-items: center;
     
-    margin: 20px 20px 20px 20px;
     padding: 3px 10px;
-  border: rgb(0, 0, 0) 1px solid;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-  @media screen and (max-width : 1050px) {
-    flex-direction: column;
     
-    
-}
 
-    &__img{
-        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-        width: 500px;
-        display: inline-block;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
 
-        @media screen and (max-width : 765px) {
-            width: 100%;
-            
-            
-        }
-        
+    @media screen and (max-width : 1050px) {
+        flex-direction: column;
+
+
     }
 
-    
+   
 
-    &__parrafo{
+
+
+    &__parrafo {
+        background-color: #f2f2f2f6;
         width: 500px;
         display: inline-block;
         text-align: center;
-        padding-right: 10px;
-        padding-top: 30px;
-        font-size: larger;
-        font-style: italic;
+        padding: 20px;
+        font-size:medium;
+        
+        border: rgba(0, 0, 0, 0.493) 1px solid;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 1rem;
 
         @media screen and (max-width : 765px) {
             width: 100%;
-            
-            
+
+
         }
 
 
     }
 }
 
-.separadorAcercaDe{
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 20px;
 
-    &__caja{
-        display: flex;
-    background-color: rgba(0, 0, 0, 0.918);
-    width: 500px;
-    height: 70px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    }
 
-    &__img{
-        height: 60px;
-    }
-}
-
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-   
-    &__parrafo{
+
+    &__parrafo {
         font-family: 'Indie Flower', cursive;
         font-size: 1.3rem;
     }

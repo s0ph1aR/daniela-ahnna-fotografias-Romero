@@ -1,0 +1,30 @@
+.header{
+
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 25px 20px -20px;
+
+   
+   
+
+    &__logo{
+        font-family: 'Indie Flower', cursive;
+        color: black;
+        display: inline-block;
+        padding: 0 0 0 10px;
+        font-weight: bold;
+        font-size: 32px;
+        
+
+            @media screen and(max-width : 400px) {
+
+                font-size: 100%;
+
+                
+            }
+            
+    }
+    &__logo:hover{
+        color: gray;
+        transition: all .3s;
+        transform: scale(1.05);
+    }
+}

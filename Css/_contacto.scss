@@ -5,32 +5,6 @@
 }
 
 
-.header {
-
-
-    &__logo {
-        font-family: 'Indie Flower', cursive;
-        color: black;
-
-        padding: 0 0 0 10px;
-        font-weight: bold;
-        font-size: 32px;
-
-
-        @media screen and(max-width : 400px) {
-
-            font-size: 100%;
-
-
-        }
-    }
-
-    &__logo:hover {
-        color: gray;
-        transition: all .3s;
-        transform: scale(1.05);
-    }
-}
 
 .mainContacto {
     display: flex;
@@ -41,14 +15,18 @@
     background-position: center center;
     justify-content: flex-end;
 
-    @media screen and(max-width : 1000px) {
-        background-color: rgba(14, 13, 13, 0.5);
-        
-    }
+   
+
+    
 
     &__form {
-        padding: 30px;
-        
+        margin: 30px;
+        padding: 10px;
+        border: rgba(0, 0, 0, 0.493) 1px solid;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #f2f2f2ad;
+
         
     }
 

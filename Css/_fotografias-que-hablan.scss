@@ -4,32 +4,7 @@
 
 }
 
- 
-.header{
-    
 
-    &__logo{
-        font-family: 'Indie Flower', cursive;
-        color: black;
-        
-        padding: 0 0 0 10px;
-        font-weight: bold;
-        font-size: 32px;
-
-            
-        @media screen and(max-width : 400px) {
-
-            font-size: 100%;
-
-            
-        }
-    }
-    &__logo:hover{
-        color: gray;
-        transition: all .3s;
-        transform: scale(1.05);
-    }
-}
 
 .container-fluid{
     display: flex;
