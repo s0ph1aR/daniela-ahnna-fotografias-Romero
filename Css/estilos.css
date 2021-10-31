@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -37,7 +38,7 @@ body {
 
 .mainIndex__img {
   width: 100%;
-  padding: 30px 0px;
+  border-top: solid 1px white;
 }
 
 .mainIndex__parrafo {
@@ -178,8 +179,8 @@ aside {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header1 header1" "separador separador" "izquierda derecha" "footerGrilla footerGrilla";
-  -ms-grid-rows: 72px 150px auto 40px;
-      grid-template-rows: 72px 150px auto 40px;
+  -ms-grid-rows: 72px 100px auto 40px;
+      grid-template-rows: 72px 100px auto 40px;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
 }
@@ -191,8 +192,8 @@ aside {
     width: auto;
     margin: 0 auto;
         grid-template-areas: "header1 " "separador " "izquierda " "derecha" "footerGrilla";
-    -ms-grid-rows: 72px 150px auto auto 40px;
-        grid-template-rows: 72px 150px auto auto 40px;
+    -ms-grid-rows: 72px 100px auto auto 40px;
+        grid-template-rows: 72px 100px auto auto 40px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -337,8 +338,9 @@ aside {
 .izquierda__img {
   -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-  margin-bottom: 200px;
+  margin-bottom: 75px;
   width: 400px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 400px) {
@@ -349,7 +351,7 @@ aside {
 
 .izquierda__parrafo {
   width: 400px;
-  padding-bottom: 150px;
+  padding-bottom: 75px;
   text-align: center;
 }
 
@@ -370,7 +372,8 @@ aside {
   -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
   width: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 75px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 400px) {
@@ -381,7 +384,7 @@ aside {
 
 .derecha__parrafo {
   width: 400px;
-  padding-bottom: 150px;
+  padding-bottom: 75px;
   text-align: center;
 }
 
@@ -450,18 +453,6 @@ aside {
   display: flex;
 }
 
-.row {
-  margin-top: 50px;
-  border-top: solid 1px rgba(255, 252, 252, 0.5);
-  background-color: #A39393;
-}
-
-.row2 {
-  margin-top: 50px;
-  border-top: solid 1px rgba(255, 252, 252, 0.5);
-  background-color: #939DA3;
-}
-
 .Img_acercaDe {
   width: 100%;
   margin-top: 20px;
@@ -473,14 +464,16 @@ aside {
 
 .texto_titulo {
   padding-top: 30px;
-  color: white;
+  color: black;
   font-size: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 }
 
 .texto_parrafo {
-  color: white;
+  color: black;
   font-size: 16px;
   padding-left: 50px;
   padding-right: 50px;
@@ -578,8 +571,8 @@ aside {
   text-align: center;
   padding-right: 10px;
   padding-top: 30px;
-  font-family: 'Indie Flower', cursive;
   font-size: larger;
+  font-style: italic;
 }
 
 @media screen and (max-width: 765px) {
@@ -666,22 +659,23 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-image: url(../multimedia/araña-cute.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.mainContacto__img {
-  -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-  width: 100%;
-  padding: 40px;
+@media screen and (max-width: 1000px) {
+  .mainContacto {
+    background-color: rgba(14, 13, 13, 0.5);
+  }
 }
 
 .mainContacto__form {
   padding: 30px;
-  border-top: 1px solid black;
 }
 
 .footer {

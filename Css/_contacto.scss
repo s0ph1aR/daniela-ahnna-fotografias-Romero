@@ -5,55 +5,62 @@
 }
 
 
-.header{
-    
+.header {
 
-    &__logo{
+
+    &__logo {
         font-family: 'Indie Flower', cursive;
         color: black;
-        
+
         padding: 0 0 0 10px;
         font-weight: bold;
         font-size: 32px;
 
-            
+
         @media screen and(max-width : 400px) {
 
             font-size: 100%;
 
-            
+
         }
     }
-    &__logo:hover{
+
+    &__logo:hover {
         color: gray;
         transition: all .3s;
         transform: scale(1.05);
     }
 }
 
-.mainContacto{
+.mainContacto {
     display: flex;
-    flex-direction: column;
 
-    &__img{
-        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-        width: 100%;
-       padding: 40px;
+    background-image: url(../multimedia/araña-cute.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: flex-end;
+
+    @media screen and(max-width : 1000px) {
+        background-color: rgba(14, 13, 13, 0.5);
+        
     }
-    &__form{
+
+    &__form {
         padding: 30px;
-        border-top: 1px solid black;
+        
+        
     }
 
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-   
-    &__parrafo{
+
+    &__parrafo {
         font-family: 'Indie Flower', cursive;
         font-size: 1.3rem;
     }
