@@ -30,7 +30,7 @@
     padding-right: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-weight: bold;
-   
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 .texto_parrafo{
     color: rgb(0, 0, 0);
@@ -39,14 +39,3 @@
     padding-right: 50px;
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-   
-    &__parrafo{
-        font-family: 'Indie Flower', cursive;
-        font-size: 1.3rem;
-    }
-}

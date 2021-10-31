@@ -13,8 +13,8 @@
     content="Página Web con un amplio portafolio fotográfico de distintas categorías, variadas secciones, información de la artista y opción de contacto directo. ">
   <!-- Links de googleFonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -24,16 +24,14 @@
   <link rel="stylesheet" href="./Css/estilos.css">
   <!-- Titulo página -->
   <title>daniela aahna fotografías</title>
-
-
 </head>
 
 <body>
   <header class="header">
     <!--este header se repite en cada seccion de la página web-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light header__degrade">
-    
-      <div class="container-fluid "><!--este es el menú de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+      <div class="container-fluid ">
+        <!--este es el menú de navegación-->
         <a class="navbar-brand" href="./index.html">
           <h1 class="header__logo">Daniela aahna fotografías</h1>
         </a>
@@ -61,13 +59,16 @@
     </nav>
   </header>
 
-
-  <section class="mainIndex">  <!--Seccion principal del index-->
+  <section class="mainIndex">
+    <!--Seccion principal del index-->
     <div>
-      <img class="mainIndex__img" src="./multimedia/panorama.jpg">  <!--Imagen panoramica-->
+      <img class="mainIndex__img" src="./multimedia/panorama.jpg">
+      <!--Imagen panoramica-->
     </div>
+
     <article>
-      <p data-aos="zoom-in" class="mainIndex__parrafo">  <!--Texto animado-->
+      <p data-aos="zoom-in" class="mainIndex__parrafo">
+        <!--Texto animado-->
         “En la vida hay eventos y encuentros que son demasiado grandes
         para poder asimilarlos de una sola vez. Por
         así decirlo, no dejan de acompañarte. Así como los teólogos dicen que Dios sigue creando el
@@ -75,15 +76,11 @@
         instante, estos encuentros siempre están en desarrollo”. <em>Giorgio Agamben, filósofo.</em>
       </p>
     </article>
-
   </section>
 
-  </div>
-  </div>
   <aside>
-
-    <div class="contenedor">  <!--Slider index-->
-
+    <div class="contenedor">
+      <!--Slider index-->
       <input type="radio" id="1" name="image-slide" hidden />
       <input type="radio" id="2" name="image-slide" hidden />
       <input type="radio" id="3" name="image-slide" hidden />
@@ -101,39 +98,26 @@
         <div class="contenedor__slide__itemSlide">
           <img src="./multimedia/boteagua1.jpg">
         </div>
-
       </div>
     </div>
-
-
-
-
-
   </aside>
-
-
-
-
-
-
 
   <footer class="footer">
     <!--este footer se repite en cada seccion de la página web-->
     <p class="footer__parrafo">Daniela aahna fotografías</p>
-    <h3 class="fs-5"> <em>Copyright©</em></h3>
+    <h3 class="fs-5"> <em> Copyright©</em></h3>
   </footer>
-<!-- Scripts Bootstrap and animation on scroll-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- Scripts Bootstrap and animation on scroll-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
-
-
 
 </html>

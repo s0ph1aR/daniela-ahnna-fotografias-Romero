@@ -58,14 +58,3 @@
 
 
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-
-    &__parrafo {
-        font-family: 'Indie Flower', cursive;
-        font-size: 1.3rem;
-    }
-}

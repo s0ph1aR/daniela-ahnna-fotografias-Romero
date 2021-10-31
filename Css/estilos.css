@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .header {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.253) 0px 25px 20px -20px;
-          box-shadow: rgba(0, 0, 0, 0.253) 0px 25px 20px -20px;
+  -webkit-box-shadow: inset 0px -15px 15px 0px rgba(8, 8, 8, 0.1);
+          box-shadow: inset 0px -15px 15px 0px rgba(8, 8, 8, 0.1);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
 .header__logo {
@@ -27,6 +28,26 @@
           transform: scale(1.05);
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  border-top: solid 1px rgba(0, 0, 0, 0.4);
+}
+
+.footer__parrafo {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -38,7 +59,8 @@ body {
 
 .mainIndex__img {
   width: 100%;
-  border-top: solid 1px white;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 20px 29px 10px;
+          box-shadow: rgba(100, 100, 111, 0.5) 0px 20px 29px 10px;
 }
 
 .mainIndex__parrafo {
@@ -143,26 +165,6 @@ aside {
   }
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  border-top: solid 1px rgba(0, 0, 0, 0.18);
-}
-
-.footer__parrafo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3rem;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -179,8 +181,8 @@ aside {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header1 header1" "separador separador" "izquierda derecha" "footerGrilla footerGrilla";
-  -ms-grid-rows: 72px 100px auto 40px;
-      grid-template-rows: 72px 100px auto 40px;
+  -ms-grid-rows: 73px 100px auto 40px;
+      grid-template-rows: 73px 100px auto 40px;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
 }
@@ -192,8 +194,8 @@ aside {
     width: auto;
     margin: 0 auto;
         grid-template-areas: "header1 " "separador " "izquierda " "derecha" "footerGrilla";
-    -ms-grid-rows: 72px 100px auto auto 40px;
-        grid-template-rows: 72px 100px auto auto 40px;
+    -ms-grid-rows: 73px 100px auto auto 40px;
+        grid-template-rows: 73px 100px auto auto 40px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -374,25 +376,6 @@ aside {
   }
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-}
-
-.footer__parrafo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3rem;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -421,6 +404,8 @@ aside {
   padding-right: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 
 .texto_parrafo {
@@ -428,25 +413,6 @@ aside {
   font-size: 16px;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-}
-
-.footer__parrafo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3rem;
 }
 
 * {
@@ -498,25 +464,6 @@ aside {
   }
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-}
-
-.footer__parrafo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3rem;
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -542,24 +489,5 @@ aside {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #f2f2f2ad;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-}
-
-.footer__parrafo {
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3rem;
 }
 /*# sourceMappingURL=estilos.css.map */
