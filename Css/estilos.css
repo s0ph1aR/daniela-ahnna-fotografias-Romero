@@ -170,105 +170,7 @@ aside {
   padding: 0px;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr auto 40px;
-      grid-template-rows: 1fr auto 40px;
-}
-
-#grilla {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header1 header1" "separador separador" "izquierda derecha" "footerGrilla footerGrilla";
-  -ms-grid-rows: 73px 100px auto 40px;
-      grid-template-rows: 73px 100px auto 40px;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-}
-
-@media screen and (max-width: 850px) {
-  #grilla {
-    display: -ms-grid;
-    display: grid;
-    width: auto;
-    margin: 0 auto;
-        grid-template-areas: "header1 " "separador " "izquierda " "derecha" "footerGrilla";
-    -ms-grid-rows: 73px 100px auto auto 40px;
-        grid-template-rows: 73px 100px auto auto 40px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-}
-
-#header1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: header1;
-}
-
-#izquierda {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: izquierda;
-}
-
-#derecha {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: derecha;
-}
-
-#footerGrilla {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: footerGrilla;
-}
-
-#separador {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: separador;
-}
-
-#izquierda {
-  border-right: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (max-width: 850px) {
-  #izquierda {
-    border-right: none;
-  }
-}
-
-#derecha {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#separador {
+.separadorPrincipal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +180,7 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100px;
 }
 
 .separador {
@@ -296,7 +199,7 @@ aside {
           align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .separador {
     width: 100%;
   }
@@ -304,6 +207,33 @@ aside {
 
 .separador__img {
   height: 60px;
+}
+
+.row {
+  width: 100%;
+  margin: 0px;
+}
+
+.colIzquierda {
+  border-right: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  padding: 0px;
+}
+
+@media screen and (max-width: 850px) {
+  .colIzquierda {
+    border-right: none;
+  }
 }
 
 .izquierda__inicio {
@@ -336,11 +266,25 @@ aside {
   }
 }
 
-@media screen and (min-width: 768px) {
-  #izquierda > img:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
+.withoutMargin {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.colDerecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  width: auto;
 }
 
 .derecha__img {
@@ -366,13 +310,6 @@ aside {
 @media screen and (max-width: 400px) {
   .derecha__parrafo {
     width: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #derecha > img:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
   }
 }
 
