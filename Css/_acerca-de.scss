@@ -34,17 +34,19 @@
 
 
     &__parrafo {
+        box-shadow: rgba(100, 100, 111, 0.4) 0px 20px 29px 10px;
         background-color: #f2f2f2f6;
         width: 500px;
         display: inline-block;
         text-align: center;
         padding: 20px;
-        font-size:medium;
-        
+        font-size: 1.2rem;
+        font-family: 'Zen Kurenaido', sans-serif;
         border: rgba(0, 0, 0, 0.493) 1px solid;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
         margin-top: 1rem;
+        color: black;
 
         @media screen and (max-width : 765px) {
             width: 100%;

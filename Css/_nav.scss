@@ -7,12 +7,19 @@
    
 
     &__logo{
-        font-family: 'Indie Flower', cursive;
-        color: black;
+        box-shadow: inset 0px -15px 15px 0px rgba(8, 8, 8, 0.05);
+        border: solid 1px rgba(0, 0, 0, 0.452);
+        font-family: 'Zen Kurenaido', sans-serif;
+        color: rgb(0, 0, 0);
         display: inline-block;
-        padding: 0 0 0 10px;
-        font-weight: bold;
-        font-size: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size:30px;
+        text-align: center;
+       margin-left: 50px;
+       margin-bottom: 0px;
         
 
             @media screen and(max-width : 400px) {
@@ -29,3 +36,13 @@
         transform: scale(1.05);
     }
 }
+
+.hr{
+    margin: 0px;
+}
+
+ul{li{
+    padding-right: 20px;
+    font-size: 1.1rem;
+    
+}}
