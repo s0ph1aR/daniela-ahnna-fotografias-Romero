@@ -74,6 +74,38 @@ body {
   background-color: rgba(169, 169, 169, 0.144);
 }
 
+.heroImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 505px;
+  background-image: url(../multimedia/panorama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.textoImage {
+  font-size: 1.3rem;
+  padding: 20px;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0, linear-gradient(to right, white 4px, transparent 4px) 0 100%, linear-gradient(to left, white 4px, transparent 4px) 100% 0, linear-gradient(to left, white 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, white 4px, transparent 4px) 0 0, linear-gradient(to bottom, white 4px, transparent 4px) 100% 0, linear-gradient(to top, white 4px, transparent 4px) 0 100%, linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  color: white;
+  text-align: center;
+}
+
+.mainIndex {
+  width: 100%;
+  height: auto;
+}
+
 .mainIndex__img {
   width: 100%;
   -webkit-box-shadow: rgba(100, 100, 111, 0.5) 0px 20px 29px 10px;
@@ -82,14 +114,63 @@ body {
 
 .mainIndex__parrafo {
   text-align: center;
-  padding: 150px 230px 150px 230px;
+  padding: 75px 230px 75px 230px;
 }
 
 @media screen and (max-width: 765px) {
   .mainIndex__parrafo {
     text-align: center;
-    padding: 150px 10px 150px 10px;
+    padding: 50px 10px 50px 10px;
   }
+}
+
+.imgRecurso {
+  width: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.4) 0px 20px 29px 10px;
+          box-shadow: rgba(100, 100, 111, 0.4) 0px 20px 29px 10px;
+}
+
+.textoRecurso {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 100px;
+  border: solid 1px rgba(0, 0, 0, 0.712);
+  padding: 15px;
+}
+
+.textoRecurso2 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.color {
+  background-color: black;
+  margin-bottom: 70px;
+}
+
+.color2 {
+  height: 670px;
+  -webkit-box-shadow: inset 0px -15px 15px 0px rgba(8, 8, 8, 0.3);
+          box-shadow: inset 0px -15px 15px 0px rgba(8, 8, 8, 0.3);
+}
+
+.imgCollage {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoCollage {
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
 }
 
 aside {
@@ -224,6 +305,57 @@ aside {
 
 .separador__img {
   height: 60px;
+}
+
+.CajaTexto {
+  -webkit-box-shadow: inset 0px -15px 15px 0px rgba(100, 100, 111, 0.4);
+          box-shadow: inset 0px -15px 15px 0px rgba(100, 100, 111, 0.4);
+  -webkit-box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, #0e1e25 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, #0e1e25 0px 2px 16px 0px;
+  background-color: #8C6554;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.CajaTexto2 {
+  -webkit-box-shadow: inset 0px -15px 15px 0px rgba(100, 100, 111, 0.4);
+          box-shadow: inset 0px -15px 15px 0px rgba(100, 100, 111, 0.4);
+  -webkit-box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, #0e1e25 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, #0e1e25 0px 2px 16px 0px;
+  background-color: #85A68E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoSeparador {
+  background-color: rgba(169, 169, 169, 0.5);
+  -webkit-box-shadow: rgba(61, 61, 63, 0.3) 0px 20px 29px 10px;
+          box-shadow: rgba(61, 61, 63, 0.3) 0px 20px 29px 10px;
+  color: #050505;
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+  text-align: center;
+  margin-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: rgba(255, 255, 255, 0.493) 1px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.entreTexto {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .container-fluid {
