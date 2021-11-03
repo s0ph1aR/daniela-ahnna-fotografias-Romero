@@ -8,14 +8,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 6.25rem;
 }
 
 .separador {
     display: flex;
     background-color: rgba(0, 0, 0, 0.918);
-    width: 500px;
-    height: 70px;
+    width: 31.25rem;
+    height: 4.3;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
     }
 
     &__img {
-        height: 60px;
+        height: 3.75rem;
     }
 }
 
@@ -52,26 +52,30 @@
 }
 
 .textoSeparador{
-    background-color: rgba(169, 169, 169, 0.5);
+    background-color: rgba(169, 169, 169, 0.6);
     box-shadow: rgba(61, 61, 63, 0.3) 0px 20px 29px 10px;
     color: rgb(5, 5, 5);
     text-decoration: underline rgb(0, 0, 0);
     text-align: center;
-    margin-top: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     border: rgba(255, 255, 255, 0.493) 1px solid;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-left-radius: 1.25rem;
+        border-bottom-right-radius: 1.25rem;
 }
 
 
 .entreTexto{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3.1rem;
+    margin-bottom: 3.1rem;
     
+}
+
+.rowM{
+    align-items: center;
 }
 
 
@@ -95,13 +99,13 @@
 
 .izquierda {
     &__inicio {
-        padding-top: 100px;
+        padding-top: 6.25rem;
     }
 
     &__img {
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
         border-radius: 5px;
         box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 
@@ -110,7 +114,7 @@
 
     &__parrafo {
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
         text-align: center;
     }
         
@@ -122,8 +126,8 @@
 .derecha {
     &__img {
         width:100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
        
         border-radius: 5px;
         box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
@@ -132,8 +136,8 @@
     }
 
     &__parrafo {
-        width:100%px;
-        padding-bottom: 20px;
+        width:100%;
+        padding-bottom: 1.25rem;
         text-align: center;
 
        

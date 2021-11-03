@@ -12,13 +12,13 @@
         font-family: 'Zen Kurenaido', sans-serif;
         color: rgb(0, 0, 0);
         display: inline-block;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size:30px;
+        padding-left: 1.8rem;
+        padding-right:  1.8rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        font-size: 1.8rem;
         text-align: center;
-       margin-left: 50px;
+       margin-left: 3.1rem;
        margin-bottom: 0px;
         
 
@@ -42,7 +42,19 @@
 }
 
 ul{li{
-    padding-right: 20px;
+    padding-right: 1.25rem;
     font-size: 1.1rem;
     
 }}
+
+.enlaceInstagram{
+    height: 3.75rem; 
+    
+}
+
+.enlaceInstagram:hover{
+    transition: all .3s;
+    background-color: aqua;
+    transform: scale(1.09);
+   
+}
