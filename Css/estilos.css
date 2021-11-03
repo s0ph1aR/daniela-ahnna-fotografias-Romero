@@ -25,6 +25,7 @@
 @media screen and (max-width: 400px) {
   .header__logo {
     font-size: 100%;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -47,6 +48,13 @@ ul li {
 
 .enlaceInstagram {
   height: 3.75rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .enlaceInstagram {
+    height: 2rem;
+  }
 }
 
 .enlaceInstagram:hover {
